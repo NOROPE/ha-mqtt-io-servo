@@ -1,0 +1,13 @@
+mqtt:
+host: localhost
+port: 1883
+username: mqtt_user
+password: mqtt_password
+topic_prefix: homeassistant/servo
+digital_outputs:
+- name: servo_pwm
+module: raspberrypi
+pin: 14
+mode: pwm
+pwm_frequency: 50
+initial: 7.0
